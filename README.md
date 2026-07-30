@@ -37,10 +37,7 @@ SaltStack supports Jinja interleaved with YAML. This first release uses the Tree
 
 Because YAML and Jinja are parsed separately, complex YAML constructs split by inline Jinja expressions may not receive perfect structural highlighting or indentation. This is a limitation of the injection-based approach, not a Salt parser or validator. A future version could add a Salt-aware language server or a dedicated composite grammar.
 
-## Publishing
-
-Before publishing, replace the placeholder `repository` URL in `extension.toml` with the public repository URL and ensure the extension ID is available in the Zed extensions registry.
 
 ## License
 
-[MIT](LICENSE)
+[GPL-3.0](LICENSE)
