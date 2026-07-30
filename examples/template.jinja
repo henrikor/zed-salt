@@ -1,0 +1,13 @@
+{# Rendered by Salt's file.managed state. #}
+{% set environment = salt['pillar.get']('environment', 'development') %}
+
+server {
+  listen {{ salt['pillar.get']('app:port', 8080) }};
+  server_name {{ grains['fqdn'] }};
+
+  {% if environment == 'production' %}
+  add_header X-Environment production;
+  {% else %}
+  add_header X-Environment {{ environment }};
+  {% endif %}
+}

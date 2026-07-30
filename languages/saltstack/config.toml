@@ -1,0 +1,5 @@
+name = "SaltStack"
+grammar = "jinja2"
+path_suffixes = ["sls", "tst"]
+line_comments = ["# "]
+tab_size = 2

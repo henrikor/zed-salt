@@ -1,0 +1,12 @@
+id = "saltstack"
+name = "SaltStack"
+version = "0.1.0"
+schema_version = 1
+authors = ["Henrik"]
+description = "Syntax highlighting and snippets for SaltStack states, pillars, SaltCheck, and Jinja templates."
+repository = "https://github.com/your-github-username/zed-salt"
+snippets = ["./snippets/saltstack.json", "./snippets/jinja.json"]
+
+[grammars.jinja2]
+repository = "https://github.com/ArcherHume/tree-sitter-jinja2"
+commit = "f5c7baa443b9d20746d2335230967234e01c934c"

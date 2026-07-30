@@ -1,0 +1,52 @@
+{
+  "Jinja if": {
+    "prefix": "jinja-if",
+    "body": [
+      "{% if ${1:condition} %}",
+      "  ${0}",
+      "{% endif %}"
+    ],
+    "description": "Jinja conditional block"
+  },
+  "Jinja if/else": {
+    "prefix": "jinja-if-else",
+    "body": [
+      "{% if ${1:condition} %}",
+      "  ${2}",
+      "{% else %}",
+      "  ${0}",
+      "{% endif %}"
+    ],
+    "description": "Jinja conditional block with else branch"
+  },
+  "Jinja for": {
+    "prefix": "jinja-for",
+    "body": [
+      "{% for ${1:item} in ${2:items} %}",
+      "  ${0}",
+      "{% endfor %}"
+    ],
+    "description": "Jinja loop"
+  },
+  "Jinja set": {
+    "prefix": "jinja-set",
+    "body": [
+      "{% set ${1:name} = ${2:value} %}$0"
+    ],
+    "description": "Set a Jinja variable"
+  },
+  "Jinja expression": {
+    "prefix": "jinja-expression",
+    "body": [
+      "{{ ${1:expression} }}$0"
+    ],
+    "description": "Jinja output expression"
+  },
+  "Jinja comment": {
+    "prefix": "jinja-comment",
+    "body": [
+      "{# ${1:comment} #}$0"
+    ],
+    "description": "Jinja comment"
+  }
+}

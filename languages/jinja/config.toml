@@ -1,0 +1,5 @@
+name = "Jinja"
+grammar = "jinja2"
+path_suffixes = ["jinja", "jinja2", "j2"]
+line_comments = ["{# "]
+tab_size = 2
