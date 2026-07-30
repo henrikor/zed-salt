@@ -4,7 +4,7 @@ version = "0.1.0"
 schema_version = 1
 authors = ["Henrik"]
 description = "Syntax highlighting and snippets for SaltStack states, pillars, SaltCheck, and Jinja templates."
-repository = "https://github.com/your-github-username/zed-salt"
+repository = "https://github.com/henrikor/zed-salt"
 snippets = ["./snippets/saltstack.json", "./snippets/jinja.json"]
 
 [grammars.jinja2]
