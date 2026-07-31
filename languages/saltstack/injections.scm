@@ -1,4 +1,5 @@
-; The Jinja grammar exposes non-template content as html_content. Treat that content
-; as YAML so ordinary Salt state and pillar syntax remains highlighted.
-((html_content) @injection.content
+; The Jinja grammar represents ordinary document text as an invisible token, so it
+; cannot be injected in YAML-sized chunks. Parse the full document as YAML instead;
+; the outer Jinja layer continues to highlight template delimiters and expressions.
+((source_file) @injection.content
   (#set! injection.language "YAML"))
